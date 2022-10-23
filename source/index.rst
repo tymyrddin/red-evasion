@@ -19,3 +19,8 @@ Evasion techniques
    :caption: Network evasion
 
    docs/network/README.md
+
+.. toctree::
+   :caption: Links
+
+   Red Team <https://tymyrddin.github.io/red/>
