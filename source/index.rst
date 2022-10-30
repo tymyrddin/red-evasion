@@ -8,9 +8,15 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Host evasion
+   :caption: Process injection
 
-   docs/host/README.md
+   docs/injection/README.md
+   docs/injection/shell.md
+   docs/injection/hollowing.md
+   docs/injection/thread.md
+   docs/injection/dll.md
+   docs/injection/pe.md
+   docs/injection/trickbot.md
 
 .. toctree::
    :glob:
