@@ -16,6 +16,10 @@ suspended state.
 9. Rewrite the target thread context ([SetThreadContext](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext)).
 10. Resume the hijacked thread ([ResumeThread](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread)).
 
+## C++ code
+
+* [ZeroMemoryEx/Thread-Hijacking](https://github.com/ZeroMemoryEx/Thread-Hijacking/blob/master/Thread-Hijacking/Thread-Hijacking.cpp)
+
 ## Resources
 
-* [Thread execution hijacking](https://attack.mitre.org/techniques/T1055/003/)
+* [MITRE: Thread execution hijacking](https://attack.mitre.org/techniques/T1055/003/)

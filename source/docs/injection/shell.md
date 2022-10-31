@@ -78,3 +78,6 @@ PS C:\Users\THM-Attacker\Desktop\Injectors> .\shellcode-injector.exe PID
 
 Flag!
 
+## Resources
+
+* [MITRE: process injection](https://attack.mitre.org/techniques/T1055)
