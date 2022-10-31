@@ -22,6 +22,20 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: AV Evasion
+
+   docs/av/README.md
+   docs/av/shell.md
+   docs/av/generate.md
+   docs/av/staged.md
+   docs/av/enc.md
+   docs/av/packers.md
+   docs/av/binders.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Network evasion
 
    docs/network/README.md
