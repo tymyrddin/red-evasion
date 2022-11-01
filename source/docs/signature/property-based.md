@@ -1,0 +1,1 @@
+# Static property-based signatures

@@ -22,7 +22,7 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: AV Evasion
+   :caption: AV evasion
 
    docs/av/README.md
    docs/av/shell.md
@@ -40,6 +40,20 @@ Evasion techniques
 
    docs/obfuscation/README.md
    docs/obfuscation/principles.md
+   docs/obfuscation/info.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Signature evasion
+
+   docs/signature/README.md
+   docs/signature/identification.md
+   docs/signature/code-based.md
+   docs/signature/property-based.md
+   docs/signature/behavioural.md
+   docs/signature/challenge.md
 
 .. toctree::
    :glob:
