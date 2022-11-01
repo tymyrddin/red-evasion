@@ -36,6 +36,15 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Obfuscation
+
+   docs/obfuscation/README.md
+   docs/obfuscation/principles.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Network evasion
 
    docs/network/README.md
