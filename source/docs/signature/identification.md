@@ -87,5 +87,4 @@ C:\Users\Student\Desktop\Tools>
 ```
 
 Having identified a signature, next up is deciding how to deal with it. Depending on the strength and type of 
-signature, it may be broken using simple obfuscation as covered in [Obfuscation](../obfuscation/principles.md), or it 
-may require specific investigation and remedy.
+signature, it may be broken using simple obfuscation, or it may require specific investigation and remedy.

