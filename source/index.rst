@@ -36,7 +36,7 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Obfuscation
+   :caption: Obfuscation basics
 
    docs/obfuscation/README.md
    docs/obfuscation/principles.md
@@ -67,6 +67,14 @@ Evasion techniques
    docs/uac/fodhelper.md
    docs/uac/env-expansion.md
    docs/uac/auto-exploit.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Runtime detection evasion
+
+   docs/runtime/README.md
 
 .. toctree::
    :glob:
