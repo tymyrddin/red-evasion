@@ -75,6 +75,7 @@ Evasion techniques
    :caption: Runtime detection evasion
 
    docs/runtime/README.md
+   docs/runtime/amsi.md
 
 .. toctree::
    :glob:

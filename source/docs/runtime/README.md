@@ -10,3 +10,4 @@ Overcoming headaches and roadblocks when executing malicious code.
 
 ## How?
 
+* [Study AMSI](amsi.md)
