@@ -12,6 +12,7 @@ complex techniques.
 
 Obfuscate the following C snippet, ensuring no suspicious API calls are present in the IAT:
 
+```text
     #include <windows.h>
     #include <stdio.h>
     #include <lm.h>
@@ -24,6 +25,43 @@ Obfuscate the following C snippet, ensuring no suspicious API calls are present 
             printf("hostname: %s\\n", hostName);
         }
     }
+```
+
+## Obfuscated code
+
+1. Define the structure of the call
+2. Obtain the handle of the module the call address is present in
+3. Obtain the process address of the call
+
+```text
+    #include <windows.h>
+    #include <stdio.h>
+    #include <lm.h>
+    
+    // Define the structure of the call
+    typedef BOOL (WINAPI* myNotGetComputerNameA)(
+        LPSTR   lpBuffer,
+        LPDWORD nSize
+    );
+    
+    int main() {
+    
+        // Obtain the handle of the module the call address is present in 
+        HMODULE hkernel32 = LoadLibraryA("kernel32.dll");
+        
+        // Obtain the process address of the call
+        myNotGetComputerNameA notGetComputerNameA = (myNotGetComputerNameA) GetProcAddress(hkernel32, "GetComputerNameA");
+
+        printf("GetComputerNameA: 0x%p\\n", GetComputerNameA);
+        CHAR hostName[260];
+        DWORD hostNameLength = 260;
+        if (GetComputerNameA(hostName, &hostNameLength)) {
+            printf("hostname: %s\\n", hostName);
+        }
+    }
+```
+
+Flag.
 
 ## Resources
 

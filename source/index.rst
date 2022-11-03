@@ -59,6 +59,19 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Bypassing UAC
+
+   docs/uac/README.md
+   docs/uac/gui.md
+   docs/uac/auto-elevate.md
+   docs/uac/fodhelper.md
+   docs/uac/env-expansion.md
+   docs/uac/auto-exploit.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Network evasion
 
    docs/network/README.md

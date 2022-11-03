@@ -168,4 +168,4 @@ Compile the binary using `mingw-gcc`.
 
     x86_64-w64-mingw32-gcc challenge.c -o challenge.exe -lwsock32 -lws2_32 
 
-And flag!
+Start a listener. Receive shell. Flag is on Administrator's Desktop.
