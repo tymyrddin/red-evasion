@@ -53,7 +53,25 @@ multiple provider DLLs and API calls depending on what is being executed and at 
 Note: AMSI is only instrumented when loaded from memory when executed from the `CLR`. It is assumed that if on disk 
 `MsMpEng.exe` (Windows Defender) is already being instrumented.
 
-Most of the known bypasses are placed in the `Win32` API layer, manipulating the `AmsiScanBuffer` API call.
+Most of the known bypasses are placed in the `Win32` API layer, manipulating the `AmsiScanBuffer` API call. 
+
+To find where AMSI is instrumented, use InsecurePowerShell, a GitHub fork of PowerShell with security features removed. 
+Look through the compared commits and observe any security features. AMSI is only instrumented in twelve lines of 
+code under `src/System.Management.Automation/engine/runtime/CompiledScriptBlock.cs`:
+
+```text
+var scriptExtent = scriptBlockAst.Extent;
+ if (AmsiUtils.ScanContent(scriptExtent.Text, scriptExtent.File) == AmsiUtils.AmsiNativeMethods.AMSI_RESULT.AMSI_RESULT_DETECTED)
+ {
+  var parseError = new ParseError(scriptExtent, "ScriptContainedMaliciousContent", ParserStrings.ScriptContainedMaliciousContent);
+  throw new ParseException(new[] { parseError });
+ }
+
+ if (ScriptBlock.CheckSuspiciousContent(scriptBlockAst) != null)
+ {
+  HasSuspiciousContent = true;
+ }
+```
 
 ## Resources
 
@@ -61,4 +79,5 @@ Most of the known bypasses are placed in the `Win32` API layer, manipulating the
 * [Antimalware Scan Interface (AMSI) functions](https://learn.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
 * [IAmsiStream interface (amsi.h)](https://learn.microsoft.com/en-us/windows/win32/api/amsi/nn-amsi-iamsistream)
 * [cobbr/InsecurePowerShell](https://github.com/cobbr/InsecurePowerShell)
+* [Removed security features in PowerShell](https://github.com/PowerShell/PowerShell/compare/master...cobbr:master)
 * [cobbr/PSAmsi](https://github.com/cobbr/PSAmsi)

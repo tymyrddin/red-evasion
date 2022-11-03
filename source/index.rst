@@ -76,6 +76,10 @@ Evasion techniques
 
    docs/runtime/README.md
    docs/runtime/amsi.md
+   docs/runtime/downgrade.md
+   docs/runtime/reflection.md
+   docs/runtime/patching.md
+   docs/runtime/automation.md
 
 .. toctree::
    :glob:

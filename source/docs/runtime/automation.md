@@ -1,0 +1,3 @@
+# Automating, but ...
+
+The previous methods are preferred.
