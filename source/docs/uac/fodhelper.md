@@ -3,7 +3,7 @@
 Now Defender is enabled and it detects [the fodhelper exploit attempt](autoelevate.md).
 
 A variation on the fodhelper exploit was proposed by 
-[V3ded](https://v3ded.github.io/redteam/utilizing-programmatic-identifiers-progids-for-uac-bypasses), where different 
+[V3ded](https://v3ded.github.io/redteam/utilizing-programmatic-identifiers-progids-for-`UAC`-bypasses), where different 
 registry keys are used, but the basic principle is the same.
 
 Instead of writing the payload into `HKCU\Software\Classes\ms-settings\Shell\Open\command`, use the `CurVer` entry 

@@ -1,14 +1,14 @@
 # GUI based bypasses
 
 These case studies are not usually applicable to real-world scenarios, as they rely on having access to a graphical 
-session, from where the standard UAC can be elevated. These just serve understanding.
+session, from where the standard `UAC` can be elevated. These just serve understanding.
 
 ## msconfig
 
-To obtain access to a High IL command prompt without passing through UAC:
+To obtain access to a High IL command prompt without passing through `UAC`:
 
 1. On the target machine open msconfig from the start menu or the "Run" dialog.
-2. Analyse the msconfig process with Process Hacker - Even when no UAC prompt was presented, msconfig runs as a high IL process
+2. Analyse the msconfig process with Process Hacker - Even when no `UAC` prompt was presented, msconfig runs as a high IL process
 3. Navigate to the Tools tab of msconfig to spawn a shell inheriting the msconfig token: Launch a Command Prompt.
 4. Obtain flag
 

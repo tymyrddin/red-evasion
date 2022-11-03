@@ -5,7 +5,7 @@ Control Panel's functionality and some executables provided with Windows.
 
 * `mmc.exe` will auto elevate depending on the `.msc` snap-in that the user requests. Most of the `.msc` files included with Windows will auto elevate.
 * Windows keeps an additional list of executables that auto elevate even when not requested in the manifest. This list includes `pkgmgr.exe` and `spinstall.exe`.
-* COM objects can also request auto-elevation by [configuring some registry keys](https://docs.microsoft.com/en-us/windows/win32/com/the-com-elevation-moniker).
+* `COM` objects can also request auto-elevation by [configuring some registry keys](https://docs.microsoft.com/en-us/windows/win32/com/the-com-elevation-moniker).
 
 For an application, to auto-elevate:
 
@@ -33,12 +33,12 @@ C:\tools\> sigcheck64.exe -m c:/windows/system32/msconfig.exe
 
 `Fodhelper.exe` is one of Windows default executables in charge of managing Windows optional features, including 
 additional languages, applications not installed by default, or other operating system characteristics. Like most of 
-the programs used for system configuration, fodhelper can auto elevate when using default UAC settings so that 
+the programs used for system configuration, fodhelper can auto elevate when using default `UAC` settings so that 
 administrators won't be prompted for elevation when performing standard administrative tasks. 
 
 fodhelper can be abused without having access to a GUI. It can be used through a medium integrity remote shell and 
 leveraged into a fully functional high integrity process. This particular technique was discovered by 
-[winscripting](https://winscripting.blog/2017/05/12/first-entry-welcome-and-uac-bypass/) and has been used in the 
+[winscripting](https://winscripting.blog/2017/05/12/first-entry-welcome-and-`UAC`-bypass/) and has been used in the 
 wild by the Glupteba malware.
 
 When Windows opens a file, it checks the registry to know what application to use. The registry holds a key known as 
@@ -47,7 +47,7 @@ trying to open an HTML file, a part of the registry known as the `HKEY_CLASSES_R
 system knows that it must use your preferred web client to open it. The command to use will be specified under the 
 `shell/open/command` subkey for each file's `ProgID`. 
 
-In reality, HKEY_CLASSES_ROOT is just a merged view of two different paths on the registry:
+In reality, `HKEY_CLASSES_ROOT` is just a merged view of two different paths on the registry:
 
 | Path	                               | Description                     |
 |:------------------------------------|:--------------------------------|
@@ -61,15 +61,15 @@ take priority. If no user-specific association is configured, then the system-wi
 `fodhelper` searches the registry for a specific key of interest under the ms-settings `ProgID`. By creating an 
 association for that `ProgID` in the current user's context under `HKCU`, we will override the default system-wide 
 association and, therefore, control which command is used to open the file. Since `fodhelper` is an `autoElevate` 
-executable, any subprocess it spawns will inherit a high integrity token, effectively bypassing UAC.
+executable, any subprocess it spawns will inherit a high integrity token, effectively bypassing `UAC`.
 
 ## Lab
 
 Note: Defender is disabled. For abusing fodhelper with Defender enabled, see [Improve fodhelper exploit](fodhelper.md).
 
 One of our agents has planted a backdoor on the target server for your convenience. He managed to create an account 
-within the Administrators group, but UAC is preventing the execution of any privileged tasks. To retrieve the flag, 
-he needs you to bypass UAC and get a fully functional high IL shell.
+within the Administrators group, but `UAC` is preventing the execution of any privileged tasks. To retrieve the flag, 
+he needs you to bypass `UAC` and get a fully functional high IL shell.
 
 To connect to the backdoor:
 
@@ -83,12 +83,15 @@ Microsoft Windows [Version 10.0.17763.1821]
 (c) 2018 Microsoft Corporation. All rights reserved.
 
 C:\Windows\system32>whoami
+whoami
 myserver\attacker
 
 C:\Windows\system32>net user attacker | find "Local Group"
+net user attacker | find "Local Group"
 Local Group Memberships      *Administrators       *Users                
 
 C:\Windows\system32>whoami /groups | find "Label"
+whoami /groups | find "Label"
 Mandatory Label\Medium Mandatory Level                        Label            S-1-16-8192
 ```
 

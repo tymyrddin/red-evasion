@@ -1,13 +1,13 @@
 # Bypassing Always Notify
 
-On default Windows configurations, applications related to the system's configuration to bypass UAC can be used  
-as most of these apps have the autoElevate flag set on their manifests. But if UAC is configured on the "Always Notify" 
-level, `fodhelper` and similar apps won't be of any use as they will require the user to go through the UAC prompt to 
+On default Windows configurations, applications related to the system's configuration to bypass `UAC` can be used  
+as most of these apps have the autoElevate flag set on their manifests. But if `UAC` is configured on the "Always Notify" 
+level, `fodhelper` and similar apps won't be of any use as they will require the user to go through the `UAC` prompt to 
 elevate. This prevents several known bypass methods. 
 
 Scheduled tasks are an exciting target. By design, they are meant to be run without any user interaction (independent 
-of the UAC security level), so asking the user to elevate a process manually is not an option. Any scheduled tasks 
-that require elevation will automatically get it without going through a UAC prompt.
+of the `UAC` security level), so asking the user to elevate a process manually is not an option. Any scheduled tasks 
+that require elevation will automatically get it without going through a `UAC` prompt.
 
 The Disk Cleanup Scheduled Task is configured to run with the Users account, which means it will inherit the 
 privileges from the calling user. The Run with highest privileges option will use the highest privilege security 
