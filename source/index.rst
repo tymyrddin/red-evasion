@@ -63,7 +63,7 @@ Evasion techniques
 
    docs/uac/README.md
    docs/uac/gui.md
-   docs/uac/auto-elevate.md
+   docs/uac/autoelevate.md
    docs/uac/fodhelper.md
    docs/uac/env-expansion.md
    docs/uac/auto-exploit.md
