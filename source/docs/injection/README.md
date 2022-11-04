@@ -1,5 +1,9 @@
 # Introduction
 
+| ![Process injection](../../_static/images/thm-injection.png) |
+|:--:|
+| [THM Room: Abusing Windows Internals](https://tryhackme.com/room/abusingwindowsinternals) |
+
 ## What?
 
 Process injection is an old technique used by malware.

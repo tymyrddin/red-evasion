@@ -1,5 +1,9 @@
 # Introduction
 
+| ![Runtime Detection Evasion](../../_static/images/thm-runtime.png) |
+|:--:|
+| [THM Room: Runtime Detection Evasion](https://tryhackme.com/room/runtimedetectionevasion) |
+
 ## What?
 
 Bypass common runtime detection measures, such as AMSI, using modern tool-agnostic approaches.

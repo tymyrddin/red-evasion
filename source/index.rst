@@ -85,6 +85,22 @@ Evasion techniques
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Evading logging and monitoring
+
+   docs/etw/README.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Living off the land
+
+   docs/land/README.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Network evasion
 
    docs/network/README.md

@@ -1,5 +1,9 @@
 # Introduction
 
+| ![AV Evasion: Shellcode](../../_static/images/thm-shellcode.png) |
+|:--:|
+| [THM Room: AV Evasion: Shellcode](https://tryhackme.com/room/avevasionshellcode) |
+
 ## What?
 
 * Making shellcodes.

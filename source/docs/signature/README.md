@@ -1,5 +1,9 @@
 # Introduction
 
+| ![Signature Evasion](../../_static/images/thm-signature.png) |
+|:--:|
+| [THM Room: Signature Evasion](https://tryhackme.com/room/signatureevasion) |
+
 ## What?
 
 Break signatures using modern tool-agnostic approaches. 

@@ -1,5 +1,9 @@
 # Introduction
 
+| ![Bypassing UAC](../../_static/images/thm-uac.png) |
+|:--:|
+| [THM Room: Bypassing UAC](https://tryhackme.com/room/bypassinguac) |
+
 ## What?
 
 Common ways to bypass User Account Control (UAC) in Windows hosts.

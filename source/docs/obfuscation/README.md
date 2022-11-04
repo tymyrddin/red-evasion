@@ -1,5 +1,9 @@
 # Introduction
 
+| ![Obfuscation Principles](../../_static/images/thm-obfuscation.png) |
+|:--:|
+| [THM Room: Obfuscation Principles](https://tryhackme.com/room/obfuscationprinciples) |
+
 ## What?
 
 Leverage tool-agnostic software obfuscation practices. 
