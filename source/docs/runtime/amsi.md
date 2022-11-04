@@ -75,6 +75,7 @@ var scriptExtent = scriptBlockAst.Extent;
 
 ## Resources
 
+* [AMSI Bypass Methods](https://pentestlaboratories.com/2021/05/17/amsi-bypass-methods/)
 * [Antimalware Scan Interface (AMSI)](https://learn.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
 * [Antimalware Scan Interface (AMSI) functions](https://learn.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
 * [IAmsiStream interface (amsi.h)](https://learn.microsoft.com/en-us/windows/win32/api/amsi/nn-amsi-iamsistream)
