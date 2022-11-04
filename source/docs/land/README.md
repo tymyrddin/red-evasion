@@ -14,3 +14,11 @@ Using these tools helps maintain stealth.
 
 ## How?
 
+* [Windows sysinternals](sysinternals.md)
+* [LOLBAS project](lolbas.md)
+* [File operations](operations.md)
+* [File execution](execution.md)
+* [Application whitelisting bypasses](app-whitelisting.md)
+* [Other techniques](other.md)
+* [Challenge](challenge.md)
+

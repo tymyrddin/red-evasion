@@ -102,6 +102,13 @@ Evasion techniques
    :caption: Living off the land
 
    docs/land/README.md
+   docs/land/sysinternals.md
+   docs/land/lolbas.md
+   docs/land/operations.md
+   docs/land/execution.md
+   docs/land/app-whitelisting.md
+   docs/land/other.md
+   docs/land/challenge.md
 
 .. toctree::
    :glob:
