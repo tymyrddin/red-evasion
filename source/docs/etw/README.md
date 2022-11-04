@@ -6,16 +6,19 @@
 
 ## What?
 
-Address Event Tracing for Windows (ETW) and its weaknesses.
+Evade Event Tracing for Windows (ETW).
 
 ## Why?
 
-Evade or disable ETW-based solutions.
+To keep the environment as clean and intact as possible while preventing the logging of session or code.
 
 ## How?
 
 * [Study ETW](etw.md)
 * [Powershell reflection](ps-reflection.md)
 * [Patching tracing functions](patching.md)
+* [Group policy takeover](takeover.md)
+* [Abusing log pipeline](pipeline.md)
+* [Challenge](challenge.md)
 
 

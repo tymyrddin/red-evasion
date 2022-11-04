@@ -91,6 +91,9 @@ Evasion techniques
    docs/etw/etw.md
    docs/etw/ps-reflection.md
    docs/etw/patching.md
+   docs/etw/takeover.md
+   docs/etw/pipeline.md
+   docs/etw/challenge.md
 
 .. toctree::
    :glob:
