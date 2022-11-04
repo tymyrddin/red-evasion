@@ -88,6 +88,9 @@ Evasion techniques
    :caption: Evading logging and monitoring
 
    docs/etw/README.md
+   docs/etw/etw.md
+   docs/etw/ps-reflection.md
+   docs/etw/patching.md
 
 .. toctree::
    :glob:

