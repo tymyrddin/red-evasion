@@ -108,7 +108,7 @@ Evasion techniques
    docs/land/execution.md
    docs/land/app-whitelisting.md
    docs/land/other.md
-   docs/land/challenge.md
+   docs/land/astaroth.md
 
 .. toctree::
    :glob:

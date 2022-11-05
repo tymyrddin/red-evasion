@@ -20,5 +20,5 @@ Using these tools helps maintain stealth.
 * [File execution](execution.md)
 * [Application whitelisting bypasses](app-whitelisting.md)
 * [Other techniques](other.md)
-* [Challenge](challenge.md)
+* [Challenge](astaroth.md)
 
