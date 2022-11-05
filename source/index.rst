@@ -107,16 +107,33 @@ Evasion techniques
    docs/land/operations.md
    docs/land/execution.md
    docs/land/app-whitelisting.md
-   docs/land/other.md
+   docs/land/shortcuts.md
+   docs/land/no-ps.md
    docs/land/astaroth.md
 
 .. toctree::
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Network evasion
+   :caption: Network security solutions
 
-   docs/network/README.md
+   docs/netsec/README.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Firewalls
+
+   docs/firewalls/README.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Sandbox evasion
+
+   docs/sandbox/README.md
 
 .. toctree::
    :caption: Links

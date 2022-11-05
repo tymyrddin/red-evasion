@@ -19,6 +19,7 @@ Using these tools helps maintain stealth.
 * [File operations](operations.md)
 * [File execution](execution.md)
 * [Application whitelisting bypasses](app-whitelisting.md)
-* [Other techniques](other.md)
+* [Shortcuts](shortcuts.md)
+* [No PowerShell](no-ps.md)
 * [Challenge](astaroth.md)
 
