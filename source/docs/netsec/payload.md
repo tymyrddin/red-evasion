@@ -97,8 +97,8 @@ On the target system, connect back:
 ## Modifying the shellcode
 
 Consider the simple case of using Ncat to create a bind shell. The command `ncat -lvnp 1234 -e /bin/bash` tells 
-ncat to listen on TCP port 1234 and bind Bash shell to it. If you want to detect packets containing such commands, 
-you need to think of something specific to match the signature but not too specific.
+ncat to listen on TCP port 1234 and bind Bash shell to it. To detect packets containing such commands, think of 
+something specific to match the signature but not too specific. So will attackers:
 
 * Scanning for `ncat -lvnp` can be easily evaded by changing the order of the flags.
 * On the other hand, inspecting the payload for `ncat -` can be evaded by adding an extra white space, such as 
