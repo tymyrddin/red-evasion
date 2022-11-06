@@ -118,6 +118,7 @@ Evasion techniques
    :caption: Network security solutions
 
    docs/netsec/README.md
+   docs/netsec/systems.md
 
 .. toctree::
    :glob:
