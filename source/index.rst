@@ -133,6 +133,14 @@ Evasion techniques
    :caption: Firewalls
 
    docs/firewalls/README.md
+   docs/firewalls/systems.md
+   docs/firewalls/source-port.md
+   docs/firewalls/fragmentation.md
+   docs/firewalls/header-fields.md
+   docs/firewalls/hopping.md
+   docs/firewalls/tunnelling.md
+   docs/firewalls/non-standard-ports.md
+   docs/firewalls/nextgen.md
 
 .. toctree::
    :glob:

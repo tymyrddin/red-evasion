@@ -28,10 +28,22 @@ outbound traffic.
 
 NGIPS and NGFW are not the same and having both can be very useful.
 
-## Next-Generation people
+## Challenges
 
-The digital age has brought with it the ubiquity of data. This omnipresent data, of all kinds, has necessitated the 
-spread of organisational roles that manage, organize and safeguard this data.
+Some challenges to keep an eye on when it comes to Next-Generation security:
+
+* False positives: You will almost undoubtedly run into the problem of false-positive alerts, which can waste time 
+and resources. Be vigilant when notified of potentially malicious behaviour, but also be aware that it is not a 
+guarantee of an attack.
+* Staffing: Cybersecurity is so essential to organisations that there is a shortage of available security 
+professionals. Before implementing an IDPS system, ensure you’ve put together a team that has the capabilities to 
+manage it effectively.
+* Genuine risks: Beyond just managing an IDPS, there will be cases where administrator intervention is required. 
+An IDPS can block many attacks but not all. Ensure teams keep their knowledge up-to-date on new types of attacks, 
+so they’re not blindsided when one is identified.
+* Ubiquity of data: The omnipresence of data, of all kinds, has necessitated the spread of organisational roles that 
+manage, organise and safeguard this data. Reputations and compliance with regulations are at stake here. How much 
+does non-compliance cost? And in case of a breach, dents in reputation?
 
 ## Resources
 

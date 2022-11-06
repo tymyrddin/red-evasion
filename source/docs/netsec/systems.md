@@ -26,12 +26,21 @@ requires Snort to be set up as inline and to bridge two or more network cards.
 
 ## IDS Engine types
 
-The detection engine of an IDS can be:
+The detection engine of an IDS can be signature-based and/or anomaly-based. There are issues with both of these 
+engines individually:
 
-* Signature-based: A signature-based IDS requires full knowledge of malicious (or unwanted) traffic. In other words, we need to explicitly feed the signature-based detection engine the characteristics of malicious traffic. Teaching the IDS about malicious traffic can be achieved using explicit rules to match against.
-* Anomaly-based: This requires the IDS to have knowledge of what regular traffic looks like. In other words, we need to “teach” the IDS what normal is so that it can recognize what is not normal. Teaching the IDS about normal traffic, i.e., baseline traffic can be achieved using machine learning or manual rules.
+* A signature-based IDS requires full knowledge of malicious (or unwanted) traffic. In other words, 
+it needs to explicitly be fed the characteristics of malicious traffic. Teaching the IDS about malicious traffic 
+can be achieved using explicit rules to match against. Signature-based detection has low false positives but can only 
+detect known attacks making them vulnerable to new, evolving attack methods.
+* Anomaly-based IDS needs to have knowledge of what regular traffic looks like. In other words, it needs 
+to be taught what normal is so that it can recognize what is not normal. Teaching the IDS about normal traffic 
+(baseline traffic) can be achieved using machine learning or manual rules. Anomaly-based detection can lead to high 
+numbers of false positives as it alerts all anomalous behaviour. But it has the potential to catch zero-day threats. 
 
-## Rule triggering examples
+Fortunately, many IDPS products combine both methodologies to complement their strengths and weaknesses.
+
+## Rule triggering examples (snort)
 
 Drop all ICMP traffic passing through Snort IPS (drop any packet of type ICMP from any source IP address (on any port) 
 to any destination IP address (on any port)):
