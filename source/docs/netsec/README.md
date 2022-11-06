@@ -15,4 +15,9 @@ To be able to apply IDS/IPS evasion techniques, such as protocol and payload man
 ## How?
 
 * [IDS/IPS systems](systems.md)
-
+* [Evasion via protocol manipulation](protocol.md)
+* [Evasion via payload manipulation](payload.md)
+* [Evasion via route manipulation](route.md)
+* [Evasion via tactical DoS](dos.md)
+* [C2 and IDS/IPS evasion](c2.md)
+* [Next-Gen security](nextgen.md)

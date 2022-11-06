@@ -119,6 +119,12 @@ Evasion techniques
 
    docs/netsec/README.md
    docs/netsec/systems.md
+   docs/netsec/protocol.md
+   docs/netsec/payload.md
+   docs/netsec/route.md
+   docs/netsec/dos.md
+   docs/netsec/c2.md
+   docs/netsec/nextgen.md
 
 .. toctree::
    :glob:
