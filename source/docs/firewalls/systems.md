@@ -1,4 +1,4 @@
-# Systems
+# Firewall systems
 
 Different types of firewalls are capable of inspecting packet fields. The most basic firewalls are able to inspect 
 at least the following fields:
@@ -22,8 +22,8 @@ number and `Destination Port` number.
 
 There are multiple ways to classify firewalls:
 
-* Whether they are independent appliances.
-* Who they protect.
+* Whether they are independent appliances (hardware vs software).
+* Who/what they protect (personal vs commercial).
 * Firewall inspection abilities (red team perspective).
 
 ## Firewall inspection abilities
