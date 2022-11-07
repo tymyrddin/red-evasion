@@ -10,12 +10,12 @@ Learn about active defense mechanisms Blue Teamers can deploy to identify advers
 
 ## Why?
 
-To not get caught.
+To escape those.
 
 ## How?
 
 * [An adversary walks into a sandbox](bar.md)
 * [Common sandbox evasion techniques](techniques.md)
 * [Implementing evasion techniques](implementation.md)
-* [DIY sandbox evasion challenge](challenge.md)
+* [The Great Escape](challenge.md)
 

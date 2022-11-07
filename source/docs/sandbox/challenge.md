@@ -1,4 +1,4 @@
-# DIY sandbox evasion challenge
+# The Great Escape
 
 Create your own Sandbox Evasion executable. In order to escape the Sandbox, you must implement the following techniques:
 
