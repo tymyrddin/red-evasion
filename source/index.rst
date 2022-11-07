@@ -1,8 +1,11 @@
 Evasion techniques
 ==============================================
 
-.. image:: _static/images/in-progress.png
-  :alt: In progress ...
+During a penetration test or red teaming engagement, we often begin the process using reconnaissance tools such as
+nmap, which is very noisy and non-stealthy. Tools like this can easily get picked up by devices such as firewalls
+and IDS. Dropping a payload on a target host, can get picked up by the Anti Virus or EDR solution. To avoid these,
+it is important to do reconnaissance without triggering alerts to the blue team and thus red teams usually employ
+techniques that will bypass these defense mechanisms.
 
 .. toctree::
    :glob:
@@ -149,6 +152,10 @@ Evasion techniques
    :caption: Sandbox evasion
 
    docs/sandbox/README.md
+   docs/sandbox/bar.md
+   docs/sandbox/techniques.md
+   docs/sandbox/implementation.md
+   docs/sandbox/challenge.md
 
 .. toctree::
    :caption: Links

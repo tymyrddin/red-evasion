@@ -14,3 +14,8 @@ To not get caught.
 
 ## How?
 
+* [An adversary walks into a sandbox](bar.md)
+* [Common sandbox evasion techniques](techniques.md)
+* [Implementing evasion techniques](implementation.md)
+* [DIY sandbox evasion challenge](challenge.md)
+
