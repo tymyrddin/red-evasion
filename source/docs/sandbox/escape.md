@@ -11,17 +11,6 @@ If your dropper meets these requirements specified above, the flag will be print
 
 _The Sandbox Evasion Techniques can fail. The program analyzes the binary to see if the checks are implemented. The outbound device may not have internet access - as long as the checks are implemented, the sandbox check should succeed._
 
-```text
-C:\Users\Administrator\Desktop\Materials\> .\SandboxChecker.exe C:\Users\TryHackMe\Materials\SandboxEvasion.exe
-[+] Memory Check found!
-[+] Network Check found!
-[+] GeoFilter Check found!
-[+] Sleep Check found!
-Congratulations! Here is your flag:
-```
-
-### Notes
-
 * If you have done it right, the "Sleep Check" will take approximately one minute to reveal the flag.
 * If your DNS check has `if(dcNewName.find("\\"))` instead of `if(dcNewName.find("\\\\"))` then you may have 
 difficulties with the sleep check.
@@ -143,4 +132,15 @@ int main() {
     }
     return 0;
 }
+```
+
+Check:
+
+```text
+C:\Users\Administrator\Desktop\Materials\> .\SandboxChecker.exe C:\Users\TryHackMe\Materials\SandboxEvasion.exe
+[+] Memory Check found!
+[+] Network Check found!
+[+] GeoFilter Check found!
+[+] Sleep Check found!
+Congratulations! Here is your flag:
 ```

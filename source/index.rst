@@ -155,7 +155,7 @@ techniques that will bypass these defense mechanisms.
    docs/sandbox/bar.md
    docs/sandbox/techniques.md
    docs/sandbox/implementation.md
-   docs/sandbox/challenge.md
+   docs/sandbox/escape.md
 
 .. toctree::
    :caption: Links

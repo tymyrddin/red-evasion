@@ -17,5 +17,5 @@ To escape those.
 * [An adversary walks into a sandbox](bar.md)
 * [Common sandbox evasion techniques](techniques.md)
 * [Implementing evasion techniques](implementation.md)
-* [The Great Escape](challenge.md)
+* [The Great Escape](escape.md)
 
