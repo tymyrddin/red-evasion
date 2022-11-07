@@ -17,6 +17,8 @@ difficulties with the sleep check.
 
 ## Code
 
+To use this code in this context for your machines, change `explorer.exe-pid` and `ATTACK_IP`.
+
 ```text
 #include <iostream>
 #include <Windows.h>
