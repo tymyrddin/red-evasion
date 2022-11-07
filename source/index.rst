@@ -1,11 +1,13 @@
 Evasion techniques
 ==============================================
 
-During a penetration test or red teaming engagement, we often begin the process using reconnaissance tools such as
-nmap, which is very noisy and non-stealthy. Tools like this can easily get picked up by devices such as firewalls
-and IDS. Dropping a payload on a target host, can get picked up by the Anti Virus or EDR solution. To avoid these,
-it is important to do reconnaissance without triggering alerts to the blue team and thus red teams usually employ
-techniques that will bypass these defense mechanisms.
+.. figure:: _static/images/evasion.png
+
+   `Red Teaming Path on Try Hack Me <https://tryhackme.com/path/outline/redteaming>`_
+
+Tools like nmap are very noisy and non-stealthy and can easily get picked up by devices such as firewalls
+and IDS. Dropping a payload on a target host, can get picked up by the Anti Virus or EDR solution. To avoid these
+detections, it is important to employ techniques that will bypass these defense mechanisms.
 
 .. toctree::
    :glob:
