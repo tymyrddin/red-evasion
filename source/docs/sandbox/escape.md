@@ -17,7 +17,7 @@ difficulties with the sleep check.
 
 ## Code
 
-To use this code in this context for your machines, change `explorer.exe-pid` and `ATTACK_IP`.
+To use this code in the THM context for your machines, change the placeholder values `explorer.exe-pid` and `ATTACK_IP`.
 
 ```text
 #include <iostream>
