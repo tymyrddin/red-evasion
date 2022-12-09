@@ -162,4 +162,4 @@ detections, it is important to employ techniques that will bypass these defense 
 .. toctree::
    :caption: Links
 
-   Red Team <https://tymyrddin.github.io/red/>
+   Red Team <https://red.tymyrddin.dev/>
