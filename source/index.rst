@@ -1,13 +1,11 @@
 Evasion techniques
 ==============================================
 
-.. figure:: _static/images/evasion.png
-
-   `Red Teaming Path on Try Hack Me <https://tryhackme.com/path/outline/redteaming>`_
-
 Tools like nmap are very noisy and non-stealthy and can easily get picked up by devices such as firewalls
 and IDS. Dropping a payload on a target host, can get picked up by the Anti Virus or EDR solution. To avoid these
 detections, it is important to employ techniques that will bypass these defense mechanisms.
+
+----
 
 .. toctree::
    :glob:
@@ -158,8 +156,3 @@ detections, it is important to employ techniques that will bypass these defense 
    docs/sandbox/techniques.md
    docs/sandbox/implementation.md
    docs/sandbox/escape.md
-
-.. toctree::
-   :caption: Links
-
-   Red Team <https://red.tymyrddin.dev/>
