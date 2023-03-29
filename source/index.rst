@@ -1,4 +1,4 @@
-Evasion techniques
+Nature's cheats
 ==============================================
 
 Tools like nmap are very noisy and non-stealthy and can easily get picked up by devices such as firewalls
@@ -170,3 +170,8 @@ detections, it is important to employ techniques that will bypass these defense 
    docs/sandbox/techniques.md
    docs/sandbox/implementation.md
    docs/sandbox/escape.md
+
+----
+
+.. image:: _static/images/books.png
+  :alt: Useful books
