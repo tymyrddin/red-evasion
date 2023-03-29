@@ -5,7 +5,21 @@ Tools like nmap are very noisy and non-stealthy and can easily get picked up by 
 and IDS. Dropping a payload on a target host, can get picked up by the Anti Virus or EDR solution. To avoid these
 detections, it is important to employ techniques that will bypass these defense mechanisms.
 
+
+.. image:: _static/images/in-progress.png
+  :alt: Forever in progress ...
+
 ----
+
+.. toctree::
+   :maxdepth: 1
+   :includehidden:
+   :caption: Testlab
+
+   Assemblers and compilers <https://red.tymyrddin.dev/projects/testlab/en/latest/docs/dev/README.html>
+   Disssemblers and decompilers <https://red.tymyrddin.dev/projects/testlab/en/latest/docs/dis/README.html>
+   Shellcoding tools <https://red.tymyrddin.dev/projects/testlab/en/latest/docs/shellcoding/README.html>
+   Exploitation tools <https://red.tymyrddin.dev/projects/testlab/en/latest/docs/exploitation/README.html>
 
 .. toctree::
    :glob:
