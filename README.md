@@ -3,7 +3,7 @@
 Built with [Sphinx](https://www.sphinx-doc.org) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided
 by [Read the Docs](https://readthedocs.org/).
 
-[![Documentation Status](https://readthedocs.org/projects/red-evasion/badge/?version=latest)](https://red.tymyrddin.dev/projects/evasion/en/latest/?badge=latest)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e75f37a-414b-4dd6-92c3-98927e195e1d/deploy-status)](https://app.netlify.com/sites/amazing-genie-9bc774/deploys)
 
 ## Requirements
 
