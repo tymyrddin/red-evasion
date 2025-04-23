@@ -16,7 +16,7 @@ detections, it is important to employ techniques that will bypass these defense 
    :includehidden:
    :caption: Testlab
 
-   Virtual machines <https://testlab.tymyrddin.dev/pdocs/vm/README>
+   Virtual machines <https://testlab.tymyrddin.dev/docs/vm/README>
    Assemblers <https://testlab.tymyrddin.dev/docs/asm/README>
    Compilers <https://testlab.tymyrddin.dev/docs/com/README>
    Disassemblers <https://testlab.tymyrddin.dev/docs/dis/README>
